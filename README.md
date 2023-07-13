@@ -2,7 +2,7 @@
 > Este projeto consiste em uma API REST desenvolvida em Laravel, que permite a consulta de dados da tabela de alimentos do IBGE. A tabela de alimentos do IBGE contém informações nutricionais e composição dos alimentos consumidos no Brasil.
 
 
-### Funcionalidades
+## Funcionalidades
 A API oferece as seguintes funcionalidades:
 
 > 1. Consulta de todos os alimentos: Retorna uma lista com todos os alimentos disponíveis na tabela.
@@ -23,38 +23,47 @@ A API oferece as seguintes funcionalidades:
 
 > Certifique-se de ter o Laravel instalado globalmente: [Laravel Installation.](https://laravel.com/docs/10.x)
 
-#### Passo a Passo
-Clone o repositório para sua máquina local:
+### Passo a Passo
+1. Clone o repositório para sua máquina local:
 ~~~git
 git clone https://github.com/renandspedrosa/tabela-alimentos-ibge-api.git
 ~~~
 
-Acesse o diretório do projeto:
+2. Acesse o diretório do projeto:
 ~~~git
 cd tabela-alimentos-ibge-api
 ~~~
 
-Instale as dependências do projeto:
+3. Instale as dependências do projeto:
 ~~~git
 composer install
 ~~~
 
-Instale as dependências do projeto:
+4. Instale as dependências do projeto:
 ~~~git
 composer install
 ~~~
 
-Configure o arquivo .env com as informações do seu ambiente local (como conexão de banco de dados).
+5. Configure o arquivo .env com as informações do seu ambiente local (como conexão de banco de dados).
 
 Execute o seguinte comando para criar as tabelas e importar os dados da tabela de alimentos do IBGE:
 ~~~git
 php artisan migrate
 ~~~
 
-Inicie o servidor local para executar o projeto:
+6. Inicie o servidor local para executar o projeto:
 ~~~git
 php artisan serve
 ~~~
 
 Acesse o projeto no seu navegador usando o endereço http://localhost:8000.
 
+## Utilizando a API
+<b> Após executar o projeto localmente, você pode utilizar a API RESTful para consultar os dados da tabela de alimentos do IBGE. Utilize ferramentas como o Postman, Insomnia ou qualquer outra aplicação de cliente REST para realizar as requisições. </b>
+
+### Exemplos de Requisições
+> Consultar dados de um alimento por código:
+
+~~~git
+GET http://localhost:8000/api/alimentos/
+~~~
