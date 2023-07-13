@@ -67,7 +67,7 @@ Acesse o projeto no seu navegador usando o endereço http://localhost:8000.
 > Consultar dados de um alimento por código:
 
 ~~~git
-GET http://localhost:8000/api/alimentos/
+GET http://localhost:8000/api/alimentos/ibge
 ~~~
 
 
