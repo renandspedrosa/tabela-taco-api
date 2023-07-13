@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ibge', function (Blueprint $table) {
+        Schema::create('ibges', function (Blueprint $table) {
             $table->id();
 
 
@@ -76,6 +76,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ibge');
+        Schema::dropIfExists('ibges');
     }
 };

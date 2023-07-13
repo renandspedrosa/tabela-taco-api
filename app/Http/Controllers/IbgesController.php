@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Ibge;
+use App\Models\Ibges;
 use Illuminate\Http\Request;
 
-class IbgeController extends Controller
+class IbgesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,15 +34,15 @@ class IbgeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Ibge $ibge)
+    public function show(Ibges $ibges)
     {
-        //
+        return Ibges::all();
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Ibge $ibge)
+    public function edit(Ibges $ibges)
     {
         //
     }
@@ -50,7 +50,7 @@ class IbgeController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Ibge $ibge)
+    public function update(Request $request, Ibges $ibges)
     {
         //
     }
@@ -58,7 +58,7 @@ class IbgeController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Ibge $ibge)
+    public function destroy(Ibges $ibges)
     {
         //
     }
