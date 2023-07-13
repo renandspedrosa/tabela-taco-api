@@ -65,7 +65,7 @@ Acesse o projeto no seu navegador usando o endereço http://localhost:8000.
 <b> Após executar o projeto localmente, você pode utilizar a API RESTful para consultar os dados da tabela de alimentos do IBGE. Utilize ferramentas como o Postman, Insomnia ou qualquer outra aplicação de cliente REST para realizar as requisições. </b>
 
 ### Exemplos de Requisições
-> Consultar dados de um alimento por código:
+> Consultar dados de um alimento pela tabela do IBGE:
 
 ~~~git
 GET http://localhost:8000/api/alimentos/ibge
