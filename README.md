@@ -5,7 +5,7 @@
 ### Funcionalidades
 A API oferece as seguintes funcionalidades:
 
-> 1. Consulta de todos os alimentos (Em desenvolvimento): Retorna uma lista com todos os alimentos disponíveis na tabela.
+> 1. Consulta de todos os alimentos: Retorna uma lista com todos os alimentos disponíveis na tabela.
 
 > 2. Consulta de dados de alimentos por código (em desenvolvimento): Permite buscar informações sobre um alimento específico com base no seu código identificador.
 
@@ -16,9 +16,12 @@ A API oferece as seguintes funcionalidades:
 ### Configuração e Execução
 ##### Para utilizar este projeto em sua máquina local, siga os passos abaixo:
 
-<b> Pré-requisitos
+<b> Pré-requisitos </b>
 > Certifique-se de ter o PHP (versão 7.4 ou superior) instalado em seu sistema.
 > Instale o composer em seu sistema: [Composer Installation.](https://getcomposer.org/doc/00-intro.md)
-Certifique-se de ter o Laravel instalado globalmente: [Laravel Installation.](https://laravel.com/docs/10.x)
+> Certifique-se de ter o Laravel instalado globalmente: [Laravel Installation.](https://laravel.com/docs/10.x)
 Passo a Passo
 Clone o repositório para sua máquina local:
+~~~git
+git clone https://github.com/renandspedrosa/tabela-alimentos-ibge-api.git
+~~~
