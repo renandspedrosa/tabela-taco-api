@@ -40,19 +40,14 @@ cd tabela-alimentos-ibge-api
 composer install
 ~~~
 
-4. Instale as dependências do projeto:
-~~~git
-composer install
-~~~
-
-5. Configure o arquivo .env com as informações do seu ambiente local (como conexão de banco de dados).
+4. Configure o arquivo .env com as informações do seu ambiente local (como conexão de banco de dados).
 
 Execute o seguinte comando para criar as tabelas e importar os dados da tabela de alimentos do IBGE:
 ~~~git
 php artisan migrate
 ~~~
 
-6. Inicie o servidor local para executar o projeto:
+5. Inicie o servidor local para executar o projeto:
 ~~~git
 php artisan serve
 ~~~
