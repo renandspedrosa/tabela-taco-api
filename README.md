@@ -1,7 +1,7 @@
 # API REST DE CONSULTA DE DADOS DA TABELA TACO DE ALIMENTOS
 > Este projeto consiste em uma API REST desenvolvida em Laravel, que permite a consulta de dados da tabela de alimentos do IBGE. A tabela de alimentos do IBGE contém informações nutricionais e composição dos alimentos consumidos no Brasil.
 
-> Atuamente tem apenas a do <b>IBGE</b> porém vou acrescentar a da <b>USDA</b>,<b> UNICAMP</b> e a <b>Tucunduva</b>
+> Atuamente tem apenas a do <b>IBGE</b> porém vou acrescentar a da <b>USDA</b>,<b> UNICAMP</b> e a <b>TUCUNDUVA</b>
 
 ## Funcionalidades
 A API oferece as seguintes funcionalidades:
