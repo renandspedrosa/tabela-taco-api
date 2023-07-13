@@ -58,6 +58,8 @@ php artisan serve
 
 Acesse o projeto no seu navegador usando o endereço http://localhost:8000.
 
+
+
 ## Utilizando a API
 <b> Após executar o projeto localmente, você pode utilizar a API RESTful para consultar os dados da tabela de alimentos do IBGE. Utilize ferramentas como o Postman, Insomnia ou qualquer outra aplicação de cliente REST para realizar as requisições. </b>
 
@@ -67,3 +69,7 @@ Acesse o projeto no seu navegador usando o endereço http://localhost:8000.
 ~~~git
 GET http://localhost:8000/api/alimentos/
 ~~~
+
+
+## Contribuição
+<b> Este projeto é aberto a contribuições. Caso queira adicionar novas funcionalidades, corrigir erros ou melhorar a documentação, fique à vontade para enviar um Pull Request. </b>
