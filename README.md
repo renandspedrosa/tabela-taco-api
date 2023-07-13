@@ -18,10 +18,43 @@ A API oferece as seguintes funcionalidades:
 
 <b> Pré-requisitos </b>
 > Certifique-se de ter o PHP (versão 7.4 ou superior) instalado em seu sistema.
+
 > Instale o composer em seu sistema: [Composer Installation.](https://getcomposer.org/doc/00-intro.md)
+
 > Certifique-se de ter o Laravel instalado globalmente: [Laravel Installation.](https://laravel.com/docs/10.x)
-Passo a Passo
+
+#### Passo a Passo
 Clone o repositório para sua máquina local:
 ~~~git
 git clone https://github.com/renandspedrosa/tabela-alimentos-ibge-api.git
 ~~~
+
+Acesse o diretório do projeto:
+~~~git
+cd tabela-alimentos-ibge-api
+~~~
+
+Instale as dependências do projeto:
+~~~git
+composer install
+~~~
+
+Instale as dependências do projeto:
+~~~git
+composer install
+~~~
+
+Configure o arquivo .env com as informações do seu ambiente local (como conexão de banco de dados).
+
+Execute o seguinte comando para criar as tabelas e importar os dados da tabela de alimentos do IBGE:
+~~~git
+php artisan migrate
+~~~
+
+Inicie o servidor local para executar o projeto:
+~~~git
+php artisan serve
+~~~
+
+Acesse o projeto no seu navegador usando o endereço http://localhost:8000.
+
