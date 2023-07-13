@@ -13,7 +13,7 @@ A API oferece as seguintes funcionalidades:
 
 > 4. Consulta de alimentos por classificação (em desenvolvimento): Permite obter uma lista de alimentos classificados de acordo com sua origem, como alimentos de origem animal, vegetal, industrializados, etc.
 
-### Configuração e Execução
+## Configuração e Execução
 ##### Para utilizar este projeto em sua máquina local, siga os passos abaixo:
 
 <b> Pré-requisitos </b>
