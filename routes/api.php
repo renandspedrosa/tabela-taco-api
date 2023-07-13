@@ -18,4 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/ibges', [IbgesController::class,'show'])->name('ibges.show');
+Route::get('/ibges', [IbgesController::class,'index'])->name('ibges.index');

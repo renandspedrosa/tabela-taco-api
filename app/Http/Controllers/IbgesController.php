@@ -12,7 +12,7 @@ class IbgesController extends Controller
      */
     public function index()
     {
-        //
+        return Ibges::all();
     }
 
     /**
@@ -36,7 +36,7 @@ class IbgesController extends Controller
      */
     public function show(Ibges $ibges)
     {
-        return Ibges::all();
+        //
     }
 
     /**
