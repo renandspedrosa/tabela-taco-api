@@ -35,7 +35,7 @@ return new class extends Migration
             $table->string('AG_Lino_leico_g',10)->nullable();
             $table->string('AG_Linole_nico_g',10)->nullable();
             $table->string('AG_Trans_total_g',10)->nullable();
-            $table->string('Acucar_total_g',10);
+            $table->string('Acucar_total_g',10)->nullable();
             $table->string('Acucar_de_adicacao_g',10)->nullable();
             $table->string('Calcio_mg',10)->nullable();
             $table->string('Mag_nesio_mg',10)->nullable();
