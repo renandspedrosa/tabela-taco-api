@@ -28,7 +28,8 @@ class IbgesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $alimento = $request->all();
+        return $request->all();
     }
 
     /**

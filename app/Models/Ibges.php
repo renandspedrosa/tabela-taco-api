@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Ibges extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'descricacao_do_alimento',
+    ];
+
+    protected $table = 'ibges';
 }

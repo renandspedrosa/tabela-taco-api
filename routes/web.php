@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/alimentos/ibge',IbgesController::class);
