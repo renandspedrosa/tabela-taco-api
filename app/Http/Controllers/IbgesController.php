@@ -35,9 +35,9 @@ class IbgesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Ibges $ibges)
+    public function show(int $id)
     {
-        //
+        return Ibges::find($id);
     }
 
     /**
@@ -51,9 +51,12 @@ class IbgesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Ibges $ibges)
+    public function update(Request $request, $id)
     {
-        //
+        $ibges = Ibges::findOrFail($id);
+        $ibges->descricacao_do_alimento = $request->descricacao_do_alimento;
+        $ibges->save();
+        return $ibges;
     }
 
     /**
