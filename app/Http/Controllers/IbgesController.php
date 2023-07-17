@@ -37,7 +37,11 @@ class IbgesController extends Controller
      */
     public function show(int $id)
     {
-        return Ibges::find($id);
+        $ibgeModel = Ibges::find($id);
+        if($ibgeModel === null) {
+            return response()->json(['message'=>'Alimento não encontrado'],404);
+        }
+        return $ibgeModel;
     }
 
     /**
