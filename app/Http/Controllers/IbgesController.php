@@ -62,8 +62,9 @@ class IbgesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Ibges $ibges)
+    public function destroy(Int $ibge)
     {
-        //
+        Ibges::destroy($ibge);
+        return response()->noContent();
     }
 }
