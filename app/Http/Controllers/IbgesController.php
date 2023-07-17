@@ -71,4 +71,12 @@ class IbgesController extends Controller
         Ibges::destroy($ibge);
         return response()->noContent();
     }
+
+    public function status(Ibges $ibges, Request $request)
+    {
+        $ibges->status = $request->status;
+        $ibges->save();
+
+        return $ibges->status;
+    }
 }

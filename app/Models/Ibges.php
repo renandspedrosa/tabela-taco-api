@@ -12,6 +12,9 @@ class Ibges extends Model
     protected $fillable = [
         'descricacao_do_alimento',
     ];
+    protected $casts = [
+        'status' => 'boolean'
+    ];
 
     protected $table = 'ibges';
 }
