@@ -10,9 +10,19 @@ class IbgesController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Ibges::all();
+        if(!$request->has('categoria') && !$request->has('descricao')){
+            return Ibges::all();
+        }
+
+        if($request->has('categoria')){
+            return Ibges::where('Categoria',$request->categoria)->get();
+        }
+
+        if($request->has('descricao')){
+            return Ibges::where('descricacao_do_alimento',$request->descricao)->get();
+        }
     }
 
     /**

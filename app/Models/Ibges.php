@@ -11,6 +11,7 @@ class Ibges extends Model
 
     protected $fillable = [
         'descricacao_do_alimento',
+        'Categoria'
     ];
     protected $casts = [
         'status' => 'boolean'
