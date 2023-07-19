@@ -12,17 +12,17 @@ class IbgesController extends Controller
      */
     public function index(Request $request)
     {
-        if(!$request->has('categoria') && !$request->has('descricao')){
-            return Ibges::all();
-        }
-
+        $query = Ibges::query();
+        
         if($request->has('categoria')){
-            return Ibges::where('Categoria',$request->categoria)->get();
+            $query->where('Categoria',$request->categoria);
         }
-
+        
         if($request->has('descricao')){
-            return Ibges::where('descricacao_do_alimento',$request->descricao)->get();
+            $query->where('descricacao_do_alimento',$request->descricao);
         }
+        
+        return $query->paginate(5);
     }
 
     /**
