@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IbgesController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,15 +17,17 @@ use App\Http\Controllers\IbgesController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::post('/user',[UserController::class,'store']);
 
 Route::middleware('auth:sanctum')->group(function(){
     Route::apiResource('/alimentos/ibge',IbgesController::class);
-    
     Route::patch('/alimentos/ibge/{$id}',[IbgesController::class,'status']);
 });
+
 
 
 Route::post('/login',function(Request $request){
@@ -33,7 +36,7 @@ Route::post('/login',function(Request $request){
 
 
     if(Auth::attempt($credentials) === false) return response()->json('Unauthorized',401);
-    
+
     $user = Auth::user();
     $user->tokens()->delete();
     $token = $user->createToken('token');
