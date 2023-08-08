@@ -23,6 +23,7 @@ use App\Http\Controllers\UserController;
 
 Route::post('/user',[UserController::class,'store']);
 
+//Route::middleware('auth:sanctum') define que tem que fazer loginpara poder fazer o request
 Route::middleware('auth:sanctum')->group(function(){
     Route::apiResource('/alimentos/ibge',IbgesController::class);
     Route::patch('/alimentos/ibge/{$id}',[IbgesController::class,'status']);
